@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lexend+Deca:wght@100&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      box-sizing: border-box;
+    }
+    .column{
+      float: right;
+      width: 50%
+    }
+
+    .row:after {
+      content: "";
+      display:table;
+      clear:both;
+
+    }
+    .container {
+      background-color: hsl(244, 38%, 16%);
+      margin:auto;
+      width:55%;
+      border:1px solid hsl(233, 47%, 7%);
+      height: 300px;
+      border-radius: 5px;
+    }
+    img{
+      border:1px ridge hsl(233, 47%, 7%);
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius:0 5px 5px 0;
+      background-color: hsl(277, 64%, 61%);
+      border-left: none;
+      opacity: 0.2;
+    }
+    body{
+      margin-top: 150px;
+      background-color:hsl(233, 47%, 7%) 
+    }
+    .text{
+      padding:12px 50px 10px 40px;
+    }
+    h2{
+      color: hsl(0, 0%, 100%);
+      
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 700;
+    }
+    p{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .pC{
+      display: inline-block;
+      width: 28%;
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+    @media screen and (max-width: 375px ){
+      .column {
+        width: 100%;
+      }
+      .container{
+        width:90%;
+        height: 600px;
+      }
+      .pC{
+        
+        text-align: center;
+      }
+      .p{
+        ~align-content: center;
+      }
+      img {
+        width:100%;
+        height:170px;
+      }
+      body{
+        margin-top: 10px;
+      }
+      .text{
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="row container">
+    <div class="column">
+      <img src="images/image-header-desktop.jpg">
+    </div>
+    <div class="column text">
+      <h2>Get <strong style="color: hsl(277, 64%, 61%);">insights</strong> that help your business grow.</h2>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+      <div class="p">
+        <p class="pC"><strong style="color: hsl(0, 0%, 100%);">10k+</strong><br> Companies</p>
+        <p class="pC"><strong style="color: hsl(0, 0%, 100%);">314</strong> Templates</p>
+        <p class="pC"><strong style="color: hsl(0, 0%, 100%);">12m+</strong> Queries</p>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://w>.
+ww.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="wesoamo500.github.io">Abdul Manan</a  </div>
+</body>
+</html>
